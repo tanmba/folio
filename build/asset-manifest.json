@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bcde29b9.chunk.css",
+    "main.js": "/static/js/main.65f91776.chunk.js",
+    "main.js.map": "/static/js/main.65f91776.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.60ded422.js",
+    "runtime-main.js.map": "/static/js/runtime-main.60ded422.js.map",
+    "static/js/2.07f657d7.chunk.js": "/static/js/2.07f657d7.chunk.js",
+    "static/js/2.07f657d7.chunk.js.map": "/static/js/2.07f657d7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.95406e348a850474c8ffdf4b64190272.js": "/precache-manifest.95406e348a850474c8ffdf4b64190272.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bcde29b9.chunk.css.map": "/static/css/main.bcde29b9.chunk.css.map",
+    "static/js/2.07f657d7.chunk.js.LICENSE.txt": "/static/js/2.07f657d7.chunk.js.LICENSE.txt",
+    "static/media/food.GIF": "/static/media/food.395ddc82.GIF",
+    "static/media/getintouch.PNG": "/static/media/getintouch.3de8d7ad.PNG",
+    "static/media/ghibli.GIF": "/static/media/ghibli.461378be.GIF",
+    "static/media/me.GIF": "/static/media/me.9c22ce4c.GIF",
+    "static/media/pictures.GIF": "/static/media/pictures.90cafd30.GIF",
+    "static/media/travel.GIF": "/static/media/travel.368aff99.GIF"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60ded422.js",
+    "static/js/2.07f657d7.chunk.js",
+    "static/css/main.bcde29b9.chunk.css",
+    "static/js/main.65f91776.chunk.js"
+  ]
+}

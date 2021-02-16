@@ -1,0 +1,23 @@
+html,
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #212529;
+}
+
+a {
+  color: #565656;
+  font-size: 1.2rem;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+::marker {
+  content: "";
+}

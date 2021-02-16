@@ -1,0 +1,187 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 5; }
+
+.navigation__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0; }
+  .navigation__links::after {
+    content: '';
+    position: absolute;
+    top: 0.8rem;
+    left: -4.5rem;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 3rem;
+    height: 1px;
+    background: #565656; }
+
+.navigation__menu {
+  width: auto;
+  position: relative;
+  bottom: 0.5rem; }
+
+.navigation__menu__bar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #f9fafa;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: block; }
+  .navigation__menu__bar .navigation__menu__bar__hamburger {
+    position: relative;
+    top: 1rem;
+    right: 0;
+    width: 3rem;
+    height: 2px;
+    background: #565656;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out; }
+  .navigation__menu__bar::after, .navigation__menu__bar::before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #565656; }
+  .navigation__menu__bar::before {
+    top: -10px; }
+  .navigation__menu__bar::after {
+    bottom: -10px; }
+  .navigation__menu__bar .navigation__menu__bar__text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: -0.4rem; }
+
+.navigation__menu input {
+  display: none; }
+
+.navigation__menu input:checked + .navigation__menu__bar {
+  box-shadow: 0 0 0 100vw #f9fafa, 0 0 0 100vh #f9fafa;
+  border-radius: 0; }
+  .navigation__menu input:checked + .navigation__menu__bar ul {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .navigation__menu input:checked + .navigation__menu__bar .navigation__menu__bar__hamburger {
+    transform: rotate(45deg); }
+  .navigation__menu input:checked + .navigation__menu__bar .navigation__menu__bar__hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0; }
+  .navigation__menu input:checked + .navigation__menu__bar .navigation__menu__bar__hamburger:before {
+    transform: rotate(90deg);
+    top: 0; }
+
+.navigation__menu__bar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(110%, -50%);
+  opacity: 0;
+  transition: .5s ease-in-out; }
+
+.navigation__menu__bar a {
+  font-family: 'Helvetica Neue';
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none; }
+
+.navigation__menu__bar ul a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 3rem;
+  color: #565656;
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden; }
+
+.navigation__menu__bar ul a:last-child {
+  margin-bottom: 0px; }
+
+.navigation__menu__bar ul a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffb7c5e6;
+  z-index: 99;
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1); }
+
+.navigation__menu__bar ul a:hover::before {
+  left: 100%; }
+
+.navigation__menu__bar ul a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 100%;
+  width: 100%;
+  height: 4px;
+  background: #ffb7c5e6;
+  transition: all .3s;
+  transition-delay: .4s; }
+
+.navigation__menu__bar ul a:hover::after {
+  left: 0%; }
+
+.navigation__menu__bar ul a p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem; }
+
+/*Desktop only*/
+@media (min-width: 992px) {
+  .navigation__links {
+    width: 13rem; } }
+
+/*Tablet and mobile*/
+@media (max-width: 991px) {
+  .navigation {
+    padding: 0 1rem; }
+  .navigation__links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 0; } }
+
+/*Mobile only*/
+@media (max-width: 767px) {
+  .navigation {
+    margin-bottom: 0; }
+  .navigation__links {
+    width: 12rem; }
+  .navigation__menu__bar,
+  .navigation__menu__bar ul {
+    z-index: 10; }
+  .navigation__menu__bar ul a {
+    font-size: 1.1rem; } }
