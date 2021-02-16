@@ -13,7 +13,7 @@ class Resume extends Component {
     const myElement = document.querySelector(".about__title__typed");
     init(myElement, {
       showCursor: false,
-      strings: ["Tan-mba", "24", "a front-end developper"]
+      strings: ["Tan-mba", "24", "a front-end developer"]
     });
   }
 
@@ -26,6 +26,10 @@ class Resume extends Component {
         </Link>
         <section className="about">
           <div className="about__title">I'm <span className="about__title__typed"></span></div>
+          <div className="about__scroll">
+            <span class="arrow-down">
+            </span>
+          </div>
         </section>
 
         <section className="resume">
@@ -36,7 +40,7 @@ class Resume extends Component {
               <span>2017-2020</span>
               <div className="resume__element__description__infos">
                 <a href="https://www.legalstart.fr/" target="__blank">Legalstart</a>
-                <span>Front-end developper<br/>React.js</span>
+                <span>Front-end developer<br/>React.js</span>
                 <p>Legalstart is an online legal services platform which goal is to allow 
                   entrepreneurs to manage all of their administrative, legal and accounting procedures 
                   alone.</p>
@@ -46,7 +50,7 @@ class Resume extends Component {
               <span>2017</span>
               <div className="resume__element__description__infos">
                 <a href>Kipic</a>
-                <span>Front-end developper<br/>Angular.js</span>
+                <span>Front-end developer<br/>Angular.js</span>
                 <p>Kipic is a startup that seeks to revolutionize the user experience in creating 
                   online photo albums. They use artificial intelligence to automate and enrich photo 
                   albums with data.</p>

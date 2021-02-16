@@ -5,10 +5,10 @@ class Navigation extends Component {
   render() {
     return(
       <nav className="navigation">
-        <ul className="navigation__links">
-          <li><Link className="navigation__links__link" to="/">Me</Link></li>
-          <li><Link className="navigation__links__link" to="/projects">Work</Link></li>
-        </ul>
+        <Link className="back" to="/projects">
+          <div className="back__button">WORK</div>
+          <div className="back__shadow"></div>
+        </Link>
       </nav>
     )
   }

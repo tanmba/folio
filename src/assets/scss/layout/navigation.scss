@@ -1,32 +1,28 @@
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   position: relative;
   z-index: 5;
+
+  .back {
+    top: 0;
+    left: 0;
+
+    &:hover {
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
 }
 
   .navigation__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     margin-bottom: 0;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0.8rem;
-      left: -1.5rem;
-      right: 0;
-      margin: 0 auto;
-      display: block;
-      width: 3rem;
-      height: 1px;
-      background: #565656;
-    }
+    width: auto;
   }
 
   .navigation__menu {
@@ -201,9 +197,6 @@
 
 /*Desktop only*/
 @media (min-width : 992px) {
-  .navigation__links {
-    width: 9rem;
-  }
 }
 
 /*Tablet and mobile*/
@@ -215,7 +208,6 @@
     .navigation__links {
       display: flex;
       justify-content: space-between;
-      width: 17%;
       margin-bottom: 0;
     }
   }
@@ -224,10 +216,6 @@
 @media (max-width : 767px) {
   .navigation {
     margin-bottom: 0;
-  }
-  
-  .navigation__links {
-    width: 9rem;
   }
 
   .navigation__menu__bar,

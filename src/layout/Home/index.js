@@ -4,7 +4,6 @@ import contact from '../../assets/media/getintouch.PNG'
 import CV from '../../assets/media/Tan-mbaTakougnadi.pdf'
 import Navigation from '../Navigation/index'
 import MouseTooltip from 'react-sticky-mouse-tooltip';
-import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -50,7 +49,7 @@ class Home extends Component {
                     </MouseTooltip>
                   ) : null
                 } 
-                , a front-end developper based in Paris.
+                , a front-end developer based in Paris.
                 <br />
                 I just graduated from <span><a href="https://www.digital-campus.fr/" target="__blank">Digital campus Paris</a></span> where I studied web development, UX/UI Design, 
                 marketing and project management and <span>I'm currently looking for a job.</span>
@@ -66,10 +65,10 @@ class Home extends Component {
             <li><a href={CV} target="_blanck">CV</a></li>
           </ul>
           <div className="footer__contact footer--home">
-            <Link href="mailto:tanmbatakougnadi@gmail.com" target="__blank">
+            <a href="mailto:tanmbatakougnadi@gmail.com" target="_blanck">
               <span role="img" aria-label="" aria-labelledby="">🌸</span>
               <img className="footer__contact__img" src={contact} alt="" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
