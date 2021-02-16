@@ -63,7 +63,7 @@ class Home extends Component {
             <li><a href="https://www.linkedin.com/in/tan-mbatakougnadi/" target="_blanck">Linkedin</a></li>
             <li><a href="https://www.facebook.com/people/Tan-Mba-Takougnadi/100001422870859" target="_blanck">Facebook</a></li>
           </ul>
-          <div className="footer__contact">
+          <div className="footer__contact footer--home">
             <Link href="mailto:tanmbatakougnadi@gmail.com" target="__blank">
               <span role="img" aria-label="" aria-labelledby="">🌸</span>
               <img className="footer__contact__img" src={contact} alt="" />

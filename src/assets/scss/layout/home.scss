@@ -125,6 +125,16 @@
   }
 }
 
+.footer--home {
+  a {
+    &:hover {
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
 /*Desktop only*/
 @media (min-width : 992px) {
   .navigation {

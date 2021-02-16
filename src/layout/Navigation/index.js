@@ -7,7 +7,7 @@ class Navigation extends Component {
       <nav className="navigation">
         <ul className="navigation__links">
           <li><Link className="navigation__links__link" to="/">Me</Link></li>
-          <li><Link className="navigation__links__link" to="/projects">Projects</Link></li>
+          <li><Link className="navigation__links__link" to="/projects">Work</Link></li>
         </ul>
       </nav>
     )
