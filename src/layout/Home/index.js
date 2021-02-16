@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import me from '../../assets/media/me.GIF'
 import contact from '../../assets/media/getintouch.PNG'
+import CV from '../../assets/media/Tan-mbaTakougnadi.pdf'
 import Navigation from '../Navigation/index'
 import MouseTooltip from 'react-sticky-mouse-tooltip';
 import { Link } from 'react-router-dom';
@@ -62,6 +63,7 @@ class Home extends Component {
           <ul className="footer__links">
             <li><a href="https://www.linkedin.com/in/tan-mbatakougnadi/" target="_blanck">Linkedin</a></li>
             <li><a href="https://www.facebook.com/people/Tan-Mba-Takougnadi/100001422870859" target="_blanck">Facebook</a></li>
+            <li><a href={CV} target="_blanck">CV</a></li>
           </ul>
           <div className="footer__contact footer--home">
             <Link href="mailto:tanmbatakougnadi@gmail.com" target="__blank">

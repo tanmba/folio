@@ -767,6 +767,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: #212529; }
 
+li {
+  width: fit-content; }
+
 a {
   color: #565656;
   font-size: 1.2rem; }
